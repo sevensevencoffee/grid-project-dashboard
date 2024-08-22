@@ -1,5 +1,5 @@
 * {
-    border: 1px solid rgb(66, 64, 64);
+    /*border: 1px solid rgb(66, 64, 64);*/
 }
 
 body {
@@ -7,8 +7,9 @@ body {
     background-color: #f0f9ff;
     margin: 0;
     height: 100vh;
+    width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
 }
 
@@ -24,7 +25,7 @@ body {
 .header {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-column: 2 / 5;
+    grid-column: 2 / 6;
     grid-row: 1;
     background-color: #bae6fd;
     padding: 10px 10px 10px 10px;
@@ -34,7 +35,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-column: 2 / 5;
+    grid-column: 2 / 6;
     grid-row: 2 / 6;
     background-color: #f0f9ff;
 }
@@ -44,18 +45,23 @@ body {
 }
 
 .sidebar-menu {
-    font-size: 20px;
-    margin-bottom: 1rem;
+    padding: 0px 0px 0px 0px;
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 0.5rem;
 }
 
 .header-top {
     display: grid;
-    grid-template-columns: 6fr 1fr 1fr 3fr;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
 }
 
 .header-btm {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
 }
 
 .content-left {
@@ -99,4 +105,58 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
+
+.favacon {
+    margin: 0;
+    height: 30px;
+}
+
+.image {
+    height: 40px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+input[type="search"] {
+    width: 80%; /* Take available space */
+    height: 25px;
+    padding: 8px 10px; /* Padding for aesthetic spacing */
+    border: 1px solid #ccc; /* Add a border to the input */
+    border-radius: 4px; /* Optional: rounded corners */
+}
+
+.notification {
+    padding: 0px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.hello-sec {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+}
+
+button {
+    background-color: #0369a1;
+    color: #f0f9ff;
+    border:none;
+    padding: 6px 10px 6px 10px;
+    border-radius: 5px;
+    width: 80px;
+}
+
+
+
 
